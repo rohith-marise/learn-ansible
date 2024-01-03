@@ -2,4 +2,11 @@
   ansible.builtin.debug:
     msg: Hi "{{ name }}"
   vars:
-    name: Rohith
+    name: rohith
+
+- name: Demo on Variables
+  vars:
+    URL: sample.com
+- name: Print URL variable
+  ansible.builtin.debug:
+    msg: "{{ URL }}"
