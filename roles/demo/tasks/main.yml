@@ -1,8 +1,8 @@
-#- name: To print Rohith using variable & anisble roles
-#  ansible.builtin.debug:
-#    msg: Hi {{ name }}
-#  vars:
-#    name: rohith
+- name: To print Rohith using variable & anisble roles
+  ansible.builtin.debug:
+    msg: Hi {{ name }}
+  vars:
+    name: rohith
 
 - name: Variables
   vars:
