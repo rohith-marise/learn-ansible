@@ -1,0 +1,5 @@
+- name: To print Rohith using variable & anisble roles
+  hosts: localhost
+  become: true
+  roles:
+    - demo
