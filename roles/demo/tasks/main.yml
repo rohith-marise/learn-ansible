@@ -1,12 +1,13 @@
 - name: To print Rohith using variable & anisble roles
   ansible.builtin.debug:
-    msg: Hi "{{ name }}"
+    msg: Hi {{ name }}
   vars:
     name: rohith
 
 - name: Variables
   vars:
     URL: sample.com
+
 - name: Print URL variable
   ansible.builtin.debug:
     msg: "{{ URL }}"
