@@ -1,0 +1,5 @@
+- name: To print Rohith using variable & anisble roles
+  ansible.builtin.debug:
+    msg: Hi "{{ name }}"
+    vars:
+      name: Rohith
