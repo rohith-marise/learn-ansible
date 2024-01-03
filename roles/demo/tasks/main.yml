@@ -4,10 +4,10 @@
   vars:
     name: rohith
 
-- name: Variables
-  vars:
-    URL: sample.com
-
-- name: Print URL variable
-  ansible.builtin.debug:
-    msg: "{{ URL }}"
+#- name: Variables
+#  vars:
+#    URL: sample.com
+#
+#- name: Print URL variable
+#  ansible.builtin.debug:
+#    msg: "{{ URL }}"
