@@ -1,0 +1,8 @@
+- name: Varibales in the play level
+  hosts: localhost
+  var:
+    msg: Rohith Kumar
+  tasks:
+    - name: To print variable
+      anisble.builtin.debug:
+        msg: "{{ msg }}"
