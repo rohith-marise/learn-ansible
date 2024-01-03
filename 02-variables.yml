@@ -4,5 +4,5 @@
     msg: Rohith Kumar
   tasks:
     - name: To print variable
-      anisble.builtin.debug:
+      ansible.builtin.debug:
         msg: "{{ msg }}"
