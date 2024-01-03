@@ -4,7 +4,7 @@
   vars:
     name: rohith
 
-- name: Demo on Variables
+- name: Variables
   vars:
     URL: sample.com
 - name: Print URL variable
