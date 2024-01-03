@@ -1,5 +1,5 @@
 - name: Varibales in the play level
-  hosts: localhost
+  hosts: all
   vars:
     msg: Rohith Kumar
   tasks:
