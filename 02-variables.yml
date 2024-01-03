@@ -1,6 +1,6 @@
 - name: Varibales in the play level
   hosts: localhost
-  var:
+  vars:
     msg: Rohith Kumar
   tasks:
     - name: To print variable
