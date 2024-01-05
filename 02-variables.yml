@@ -6,3 +6,9 @@
     - name: To print variable
       ansible.builtin.debug:
         msg: "{{ msg }}"
+
+    - name: Run time Variables
+      ansible.builtin.debug:
+        msg: "Bane extralu {{ beep }}"
+
+
