@@ -9,6 +9,6 @@
 
     - name: Run time Variables
       ansible.builtin.debug:
-        msg: "Bane extralu {{ beep }}"
+        msg: "Bane extralu {{ beep }} ga"
 
 
