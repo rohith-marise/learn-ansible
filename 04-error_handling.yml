@@ -3,6 +3,7 @@
   tasks:
     - name: Valid shell module command
       ansible.builtin.shell: pwd
+      register: pwd
 
     - name: In valid shell module command
       ansible.builtin.shell: lss
@@ -10,3 +11,8 @@
 
     - name: Valid shell module command
       ansible.builtin.shell: date
+      register: date
+
+    - name: Valid shell module command
+      ansible.builtin.debug:
+        msg: "{{ pwd,date}}"
