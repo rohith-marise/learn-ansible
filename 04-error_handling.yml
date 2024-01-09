@@ -16,5 +16,5 @@
     - name: Valid shell module command
       ansible.builtin.debug:
         msg:
-          - "{{ date.stdout | split(','))[0] }}"
+          - "{{ (date.stdout | split(','))[0] }}"
           - "{{ (pwd.stdout | split(','))[0] }}"
