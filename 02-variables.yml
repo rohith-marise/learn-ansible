@@ -10,7 +10,7 @@
     - name: Run time Variables
       ansible.builtin.debug:
         msg: "Bane extralu {{ beep }} ga"
-        vars:
-          beep: Mingutunavu ga
+      vars:
+        beep: Mingutunavu ga
 
 
