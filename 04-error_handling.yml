@@ -1,24 +1,29 @@
-- name: Error handling | Ansible facts | Ansible filters
+- name: Error handling | Ansible facts | Ansible filters | Anisble conditions
   hosts: localhost
   tasks:
     - name: Valid shell module command
       ansible.builtin.shell: pwd
       register: pwd
+      when: os == "Linux"
 
     - name: In valid shell module command
       ansible.builtin.shell: lss
       ignore_errors: yes
+      when: os == "Unix"
 
     - name: Valid shell module command
       ansible.builtin.shell: date
       register: date
+      when: os == "Linux"
 
     - name: Valid shell module command with filters in ansible
       ansible.builtin.debug:
         msg:
           - "{{ (date.stdout | split(','))[0] }}"
           - "{{ (pwd.stdout | split(','))[0] }}"
+      when: os == "Linux"
 
     - name: Anisble facts
       ansible.builtin.debug:
         msg: "{{ ansible_all_ipv4_addresses }}"
+      when: os == "Linux"
