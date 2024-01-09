@@ -13,8 +13,12 @@
       ansible.builtin.shell: date
       register: date
 
-    - name: Valid shell module command
+    - name: Valid shell module command with filters in ansible
       ansible.builtin.debug:
         msg:
           - "{{ (date.stdout | split(','))[0] }}"
           - "{{ (pwd.stdout | split(','))[0] }}"
+
+    - name: Anisble facts
+      ansible.builtin.debug:
+        msg: "{{ REDACTED IP ADDRESS }}"
