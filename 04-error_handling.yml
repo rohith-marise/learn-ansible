@@ -6,7 +6,7 @@
 
     - name: In valid shell module command
       ansible.builtin.shell: lss
-      ignore_error: true
+      ignore_errors: yes
 
     - name: Valid shell module command
       ansible.builtin.shell: date
