@@ -1,0 +1,11 @@
+- name: Error handling
+  hosts: localhost
+  tasks:
+    - name: Valid shell module command
+      ansible.builtin.shell: pwd
+
+    - name: In valid shell module command
+      ansible.builtin.shell: lss
+
+    - name: Valid shell module command
+      ansible.builtin.shell: date
