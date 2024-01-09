@@ -21,4 +21,4 @@
 
     - name: Anisble facts
       ansible.builtin.debug:
-        msg: "{{ REDACTED IP ADDRESS }}"
+        msg: "{{ ansible_all_ipv4_addresses }}"
