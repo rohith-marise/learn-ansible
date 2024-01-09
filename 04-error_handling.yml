@@ -1,4 +1,4 @@
-- name: Error handling
+- name: Error handling | Ansible facts | Ansible filters
   hosts: localhost
   tasks:
     - name: Valid shell module command
